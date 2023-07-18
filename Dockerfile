@@ -2,7 +2,7 @@
 FROM ghcr.io/linuxserver/baseimage-alpine:3.13
 
 ## Maintainer info
-MAINTAINER razorgirl <https://github.com/razorgirl>
+MAINTAINER Lennong <https://github.com/Lennong>
 
 # set python to use utf-8 rather than ascii.
 ENV PYTHONIOENCODING="UTF-8"
