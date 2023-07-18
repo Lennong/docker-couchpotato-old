@@ -1,6 +1,6 @@
 # docker-couchpotato-old
 
-Dockerfile to set up a Couchpotato (v2.6.3) container
+Dockerfile to set up a Couchpotato container
 
 Forked from https://github.com/razorgirl/docker-couchpotato
 
