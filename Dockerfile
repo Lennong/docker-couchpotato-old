@@ -24,4 +24,4 @@ VOLUME /media
 VOLUME /config
 
 ## Run Couchpotato
-ENTRYPOINT ["python", "couchpotato-old/CouchPotato.py"]
+ENTRYPOINT ["python", "couchpotato-old/CouchPotato.py", "--config=/config/couchpotato.ini"]
