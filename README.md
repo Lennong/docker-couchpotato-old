@@ -1,14 +1,14 @@
-# docker-couchpotato
+# docker-couchpotato-old
 
-Dockerfile to set up a Couchpotato container
+Dockerfile to set up a Couchpotato (v2.6.3) container
 
 ## Build
 
-    docker build --tag razorgirl/couchpotato git://github.com/razorgirl/docker-couchpotato.git
+    docker build --tag lennong/couchpotato git://github.com/lennong/docker-couchpotato-old.git
 
 ## Run
 
-    docker run -d -p 5050:5050 -v <LOCAL_MOVIES_FOLDER>:/movies --restart=always --name couchpotato razorgirl/couchpotato
+    docker run -d -p 5050:5050 -v /media:/media --restart=always --name couchpotato lennong/couchpotato
 
 ## License
 
