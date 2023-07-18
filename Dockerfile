@@ -1,5 +1,5 @@
 ## Base image to use
-FROM alpine
+FROM ghcr.io/linuxserver/baseimage-alpine:3.13
 
 ## Maintainer info
 MAINTAINER razorgirl <https://github.com/razorgirl>
@@ -8,13 +8,13 @@ MAINTAINER razorgirl <https://github.com/razorgirl>
 ENV PYTHONIOENCODING="UTF-8"
 
 ## Update base image and install prerequisites
-RUN apk add --update git python && \
+RUN apk add --update git python2 && \
   rm -rf /var/cache/apk/*
 
 ## Install Couchpotato
 RUN mkdir /opt && \
   cd /opt && \
-  git clone https://github.com/RuudBurger/CouchPotatoServer.git
+  git clone https://github.com/Lennong/couchpotato-old.git
 
 ## Expose port
 EXPOSE 5050
