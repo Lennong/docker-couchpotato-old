@@ -6,7 +6,7 @@ Forked from https://github.com/razorgirl/docker-couchpotato
 
 ## Build
 
-    docker build --tag lennong/couchpotato git://github.com/lennong/docker-couchpotato-old.git
+    docker build --tag lennong/couchpotato https://github.com/lennong/docker-couchpotato-old.git
 
 ## Run
 
