@@ -18,8 +18,10 @@ RUN cd /opt && \
 ## Expose port
 EXPOSE 5050
 
-## Set working directory
+## Set directories
 WORKDIR /opt
+VOLUME /media
+VOLUME /config
 
 ## Run Couchpotato
-ENTRYPOINT ["python", "couchpotato-old/CouchPotato.py --config=/opt/couchpotato-old/couchpotato.ini"]
+ENTRYPOINT ["python", "couchpotato-old/CouchPotato.py"]
