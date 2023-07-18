@@ -22,4 +22,4 @@ EXPOSE 5050
 WORKDIR /opt
 
 ## Run Couchpotato
-ENTRYPOINT ["python", "couchpotato-old/CouchPotato.py"]
+ENTRYPOINT ["python", "couchpotato-old/CouchPotato.py --config=/opt/couchpotato-old/couchpotato.ini"]
