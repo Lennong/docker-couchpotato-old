@@ -2,6 +2,8 @@
 
 Dockerfile to set up a Couchpotato (v2.6.3) container
 
+Forked from https://github.com/razorgirl/docker-couchpotato
+
 ## Build
 
     docker build --tag lennong/couchpotato git://github.com/lennong/docker-couchpotato-old.git
