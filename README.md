@@ -22,8 +22,8 @@ Dockerfile to set up a Couchpotato container. Take note: this is built on Alpine
         - PGID=1000
         - TZ=Europe/Stockholm
       volumes:
-        - /config:/config # to access docker's config file from host
-        - /media:/media # to access host's media files from docker
+        - /config:/config #to access docker's config file from host
+        - /media:/media #to access host's media files from docker
       ports:
         - 5050:5050
       restart: unless-stopped
