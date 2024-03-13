@@ -13,20 +13,20 @@ Dockerfile to set up a Couchpotato container. Take note: this is built on Alpine
 ## docker-compose
 
     version: "3"
-services:
-  couchpotato:
-    image: lennong05/couchpotato-old
-    container_name: couchpotato
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Stockholm
-    volumes:
-      - /config:/config
-      - /media:/media
-    ports:
-      - 5050:5050
-    restart: unless-stopped
+    services:
+      couchpotato:
+      image: lennong05/couchpotato-old
+      container_name: couchpotato
+      environment:
+        - PUID=1000
+        - PGID=1000
+        - TZ=Europe/Stockholm
+      volumes:
+        - /config:/config
+        - /media:/media
+      ports:
+        - 5050:5050
+      restart: unless-stopped
 
 ## License
 
