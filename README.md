@@ -23,8 +23,8 @@ Take note: this is built on Alpine 3.11, Python 2.7.18 and pip 20.0.2.
         - PGID=1000
         - TZ=Europe/Stockholm
       volumes:
-        - /config:/config #to access docker's config file from host
-        - /media:/media #to access host's media files from docker
+        - /config:/config #to access couchpotato's config file from host
+        - /media:/media #to access host's media files from couchpotato
       ports:
         - 5050:5050
       restart: unless-stopped
