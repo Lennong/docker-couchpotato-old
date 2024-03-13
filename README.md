@@ -1,6 +1,6 @@
 # docker-couchpotato-old
 
-Dockerfile to set up a Couchpotato container
+Dockerfile to set up a Couchpotato container. Take note: this is built on Alpine 3.11 and Python 2.7.18.
 
 ## Build
 
