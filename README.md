@@ -3,8 +3,6 @@
 Dockerfile to containerize the old classic Couchpotato.
 Take note: this is built on Alpine 3.11, Python 2.7.18 and pip 20.0.2.
 
-1. Start the docker
-2. Run update from within Couchpotato
 
 ## Build
 
