@@ -158,6 +158,9 @@ RUN set -ex; \
 		\) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
 
+# Install git
+RUN apk add --no-cache git
+
 ## Install Couchpotato
 RUN cd /opt && \
   git clone https://github.com/Lennong/couchpotato-old.git
