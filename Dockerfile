@@ -171,7 +171,8 @@ EXPOSE 5050
 ## Set directories
 WORKDIR /opt
 VOLUME /media
+VOLUME /data
 VOLUME /config
 
 ## Run Couchpotato
-ENTRYPOINT ["python2", "couchpotato-old/CouchPotato.py", "--config=/config/couchpotato.ini"]
+ENTRYPOINT ["python2", "couchpotato-old/CouchPotato.py", "--data_dir=/data", "--config=/config/couchpotato.ini"]
