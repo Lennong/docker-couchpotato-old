@@ -27,6 +27,7 @@ Take note: this is built on Alpine 3.11, Python 2.7.18 and pip 20.0.2.
         - TZ=Europe/Stockholm
       volumes:
         - /path/to/config:/config
+        - /path/to/data:/data
         - /path/to/media:/media
       ports:
         - 5050:5050
