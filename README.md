@@ -10,7 +10,7 @@ Take note: this is built on Alpine 3.11, Python 2.7.18 and pip 20.0.2.
 
 ## Run
 
-    docker run -d -p 5050:5050 -v /media:/media --restart=always --name couchpotato lennong/couchpotato
+    docker run -d -p 5050:5050 -v /config:/config -v /data:/data -v /media:/media --restart=always --name couchpotato lennong/couchpotato
 
 ## docker-compose
 
